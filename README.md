@@ -13,3 +13,5 @@ The way I preferred to do is as following:
 2. Download zip or clone this repository to your computer.
 3. Navigate to your eclipse workspace, copy & overwrite the empty web project with the repository content.
 4. Now the demo should work properly.
+
+If you encountered errors popping up in servlets, right click the Project>Build Path>Configure Build Path, select "Add Library" and add the Server Runtime, choose Apache Tomcat 7. The errors should be gone now.

@@ -11,5 +11,5 @@ The way I preferred to do is as following:
 
 1. In eclipse, create a new Dynamic Web Project same as this repository name.
 2. Download zip or clone this repository to your computer.
-3. Navigate to your eclipse workspace, copy & overwrite the empty web project with the repository content).
+3. Navigate to your eclipse workspace, copy & overwrite the empty web project with the repository content.
 4. Now the demo should work properly.

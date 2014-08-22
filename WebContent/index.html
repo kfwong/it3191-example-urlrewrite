@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+<title>it3191-example-urlrewrite</title>
+</head>
+<body>
+	<h1>it3191-example-urlrewrite</h1>
+	<p>This is a simple example of urlrewrite using tuckey's urlrewrite filter.</p>
+	
+	<p>I use it for the tidyness of my resources and URL management. The benefit is that I do not have to modify all my url mappings even if my resources name change, for example: myOldPage.html to myNewPage.html. The only thing I need to change is the URL Rewrite declaration in urlrewrite.xml.</p>
+	
+	<p><strong>From security point of view, I also use it to serve as a base for my resource restriction and access control. I can define URL rewrite as /admin/* and /public/* to seperate the accessibility of different users. This however require another filter to do the authentication & authorization.</strong></p>
+	
+	<p>There are tons of other useful feature like browser detection and conditional mappings. You should look at the official website for more example.</p>
+	
+	<h2>Additional Advise</h2>
+	<p>Make sure you plan your url rewrite mappings well before you deploy. Especially general resources like css and js. Usually you don't want to rewrite or restrict access to them (or else they can't load!). Accidentally including them into url rewrite will render application misbehave.</p>
+	
+	<h2>Demo</h2>
+	<p><a href="pretty/url/to/servlet/page">Servlet</a></p>
+	<p><a href="pretty/url/to/jsp/page">JSP</a></p>
+	<p><a href="pretty/url/to/html/page">HTML</a></p>
+	
+	<h2>Installation Guide</h2>
+	<p>You should follow the 3 steps instruction at <a href="http://tuckey.org/urlrewrite/">http://tuckey.org/urlrewrite/</a>.</p>
+	<p>Things to take care of:</p>
+	<ol>
+		<li>Include the urlrewrite jar to WEB-INF/lib</li>
+		<li>Declare filter mappings in web.xml</li>
+		<li>Declare your rewrite rules in urlrewrite.xml. You should create your own urlrewrite.xml or make a copy from <a href="https://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/urlrewrite.xml">https://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/4.0/urlrewrite.xml</a></li>
+	</ol>
+	
+	<h2>Reference</h2>
+	<p><a href="http://tuckey.org/urlrewrite/">http://tuckey.org/urlrewrite/</a></p>
+</body>
+</html>

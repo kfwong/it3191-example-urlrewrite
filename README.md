@@ -3,8 +3,9 @@
 This is a simple example of urlrewrite using tuckey's urlrewrite filter.
 
 ##Installation
-Due to the way git and eclipse structured as described here this project need some manual setup before it will work: http://wiki.eclipse.org/EGit/User_Guide#Eclipse_Workspace_and_Repository_working_directory
-Using Eclipse's import feature will not work.
+Due to the way git and eclipse structured as described here this project need some manual setup before it will work: http://wiki.eclipse.org/EGit/User_Guide#Eclipse_Workspace_and_Repository_working_directory.
+
+Eclipse's git import feature will not work in this repository setup.
 
 The way I preferred to do is as following:
 
